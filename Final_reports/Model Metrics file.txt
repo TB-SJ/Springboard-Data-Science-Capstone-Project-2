@@ -1,0 +1,20 @@
+Model Overview
+Model Used: XGBoost Classifier 
+Target Variable: goal
+Problem Type: Binary classification
+
+Metric  ValueAccuracy0.74Precision0.60Recall0.77F1 Score0.0.6ROC AUC Score0.86
+
+Class Imbalance Handling
+Strategies Used: scale_pos_weight for XGBoost, SMOTE Resampling, Undersampling
+Reason: Dataset was heavily imbalanced with far fewer goals than non-goals with a 9.85 imbalanced ratio.
+
+Hyperparameter Tunning/Cross-Validation
+Method: 5-fold RandomizedSearchCV 
+CV Metric: Mean F1 score
+Parameters: 'n_estimators', 'learning_rate',  'max_depth’,  'min_child_weight' 'gamma', 'lambda', 'alpha' , 'scale_pos_weight'
+
+Business Interpretation
+A recall of 0.77 means the model correctly identified 79.6% of true goals.
+Useful for evaluating player efficiency or simulating scoring opportunities.
+
