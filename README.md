@@ -42,8 +42,6 @@ This capstone project aims to build a predictive model that estimates how many g
   - Undersampling  
   - XGBoost’s `scale_pos_weight`  
 
-*(Add dataset source, size, and preprocessing steps here if applicable)*
-
 ---
 
 ## 🧠 Methodology
